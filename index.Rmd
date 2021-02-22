@@ -1,0 +1,56 @@
+---
+title: "Assignmet 3: Incarceration"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, include=FALSE}
+source(analysis.R)
+```
+
+## Intrroduction and Summary Information
+Prisons and jails have become an increasingly controversial topic in the United States. Type **US prison system** into Google and the first thing that will pop up is **US prison system is legalized slavery**. I decided to use the variables __black_prison_adm_rate, black_male_prison_pop, black_female_prison_pop, total_prison_pop, total_prison_adm_rate__ because all of them will help to analyze the biggest issue within the prison system, systemic racism. With the right charts and graphs, I believe these variables will allow me to inspect some of the underlying issues within the prison system.
+
+With these variables, I will be able to dive into specific data points such as:
+      
+
+
+
+
+      
+  - What is the ratio of the black male prison population to the black female prison population?
+  - What is the difference between the black prison admission rate and the total prison admission rate?
+  - What year was the black male prison population at its max?
+  - What year was the black female prison population at its max?
+  - What year was the black prison admission rate at its minimum?
+  
+  
+## Trends Over Time Chart
+``` {r, echo=FALSE}
+chart
+```
+  
+  
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
