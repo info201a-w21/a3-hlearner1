@@ -8,7 +8,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r, include=FALSE}
-source(analysis.R)
+source("analysis.R")
 ```
 
 ## Intrroduction and Summary Information
@@ -21,36 +21,45 @@ With these variables, I will be able to dive into specific data points such as:
 
 
       
-  - What is the ratio of the black male prison population to the black female prison population?
-  - What is the difference between the black prison admission rate and the total prison admission rate?
-  - What year was the black male prison population at its max?
-  - What year was the black female prison population at its max?
-  - What year was the black prison admission rate at its minimum?
+  - Which state has the highest jail population in the most recent year?
+``` {r, echo=FALSE}
+black_county
+```
+  - Which county in California has the largest jail population in the most recent year?
+``` {r, echo=FALSE}
+max_county
+```
+  - Which year was the black male prison population at its max?
+``` {r, echo=FALSE}
+max_black_male_prison_year
+```
+  - Which year was the black female prison population at its max?
+``` {r, echo=FALSE}
+max_black_female_prison_year
+```
+  - Which year was the Latinx prison population at its max?
+``` {r, echo=FALSE}
+max_latinx_pop
+```
   
   
 ## Trends Over Time Chart
 ``` {r, echo=FALSE}
-chart
-```
-  
-  
-
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+trend_over_time_chart
 ```
 
-## Including Plots
+I decided to include this chart because I wanted to illustrate if there was a difference between the black male and black female prison population, and how this relationship changed over time. The main thing that this graph displayed was how much the black male prison population increased over time while the black female prison population remained pretty close to constant. I was surprised by this, as I thought both would have risen over time.
 
-You can also embed plots, for example:
+## Variable Comparison Chart
+``` {r, echo=FALSE}
+comparison_chart
+``` 
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+The reason I decided to create this chart is because I wanted to illustrate the relationship between black prison admission rates and the total prison admission rate. I knew that as the total prison admission rate rose so would the black prison admission rate, but I wanted to see the relationship between the two rates when the total prison admission rate was low. The chart vastly followed what I predicted it would look like, with the black prison admission rate always being higher than the total rate.
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+## Map
+``` {r, echo=FALSE}
+black_jail_map
+``` 
+
+The reason I decided to create a map of the black male jail population in Georgia is because I wanted to see a heat map of a state with pockets of high urban populations with the outskirts being predominantly white. I assumed that the highest black male population in Georgia would be in and around Atlanta, and as the map illustrates this theory was correct.
