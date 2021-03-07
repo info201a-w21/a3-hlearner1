@@ -22,25 +22,24 @@ With these variables, I will be able to dive into specific data points such as:
 
       
   - Which state has the highest jail population in the most recent year?
-``` {r, echo=FALSE}
-black_county
-```
+
+`r black_county`
+
   - Which county in California has the largest jail population in the most recent year?
-``` {r, echo=FALSE}
-max_county
-```
+
+`r max_county`
+
   - Which year was the black male prison population at its max?
-``` {r, echo=FALSE}
-max_black_male_prison_year
-```
+
+`r max_black_male_prison_year`
+
   - Which year was the black female prison population at its max?
-``` {r, echo=FALSE}
-max_black_female_prison_year
-```
+
+`r max_black_female_prison_year`
+
   - Which year was the Latinx prison population at its max?
-``` {r, echo=FALSE}
-max_latinx_pop
-```
+
+`r max_latinx_pop`
   
   
 ## Trends Over Time Chart
